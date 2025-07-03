@@ -15,7 +15,7 @@ body{
    display: flex;
    flex-direction: column;
     width: 20%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -24,6 +24,7 @@ span, h1{
     flex-direction: row;
     align-items: center;
     margin: 5px 0px 7px 15px;
+    cursor: pointer;
 }
 h1{
     margin: 15px 0px 35px 15px;
@@ -42,7 +43,7 @@ span svg{
 
 .main{
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(225, 232, 240);
     
 }
@@ -116,17 +117,192 @@ input{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: -120px;
+    margin-left: -125px;
     margin-top: 15px;
 }
-.section2 span{
+.section2 a{
    text-decoration: none;
    background-color: rgb(24, 146, 211);
     width: 67px;
     height: 35px;
    border-radius: 50px;
    color: white;
-    padding: 15px;
+    padding: 8px;
     text-align: center;
     margin-top: 20px;
 }
+.section3{
+    display: flex;
+    flex-direction: row;
+}
+.section3 .sec-p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #616161;
+}
+.section3 .div-yellow{
+    
+    border-left: 4px solid rgb(243, 204, 44);
+    border-radius: 6px;
+    background-color: white;
+    margin: 10px; 
+    position: relative;
+    
+}
+.div-yellow h1{
+    margin: 5px 0px 7px 15px;
+    font-size: 16px;
+    color: #0d0d0d;
+}
+.div-yellow .yellow-text{
+    font-size: 12px;
+    color: #616161;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.div-yellow .logo-option{
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+}
+.logo-option svg{
+    width: 15px;
+    height: 15px;
+}
+
+.sect3-ann, .sect3-trend{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.sect3-ann .b-bottom{
+    border-bottom: 1px solid #616161;
+}
+.bloc h2{
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.bloc p{
+    font-size: 7px;
+    font-weight: 500;
+    color: #616161;
+    padding-bottom: 6px;
+}
+.trend-profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trend-profil .user{
+    font-size: 10px;
+    margin-left: 10px;
+    color: #525151;
+}
+.trend-profil .desc{
+    font-size: 7px;
+    margin-left: 10px;
+    color: #aca9a9;
+}
+
+.section3-one{
+    display: grid;
+    width: 70%;
+    position:relative;
+}
+.div-yellow{
+    position: absolute;
+    top: -20px;
+}
+.section3-one .project{
+    margin: 8px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.section3-one .one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.section3-one .two{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.section3-one .three{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+.section3-one .four{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+
+.section3-one .five{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+.section3-one .six{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+
+.section3-two{
+    display: grid;
+    width: 30%;
+}
+
+.section3-two .announcement{
+    margin: 6px;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.section3-two  .trending{
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin-top: 8px;
+}
+
+.sect3-ann{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 4; 
+    margin-right: 40px;
+    height: 29vh;
+}
+
+.sect3-trend{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 9; 
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 28vh;
+}
+
